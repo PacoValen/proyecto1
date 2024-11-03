@@ -1,0 +1,39 @@
+plugins {
+    id 'java' // Agrega el plugin de Java para habilitar tareas como build y clean
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral() // Repositorio para dependencias
+}
+
+dependencies {
+    // Dependencias para el proyecto, agrega aquí si necesitas alguna
+    testImplementation 'junit:junit:4.13.2' // Ejemplo de dependencia para pruebas
+
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
+
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
+
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation 'org.testng:testng:7.10.2'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
+    implementation 'io.cucumber:cucumber-java:7.20.1'
+
+    // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
+    testImplementation 'io.cucumber:cucumber-junit:7.20.1'
+
+
+}
+
+// Configura la versión de Java
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17) // Cambia a tu versión de Java
+    }
+}
