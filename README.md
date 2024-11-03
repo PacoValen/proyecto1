@@ -15,7 +15,7 @@ Es una herramienta de **automatización de pruebas** de código abierto diseñad
 
 Es una librería que nos permite escribir en un lenguaje no técnico (Gherkin) describiendo los requisitos de una aplicación en una forma legible. Cucumber permite documentar el comportamiento de nuestro sistema al mismo tiempo en el que se están creando los casos de prueba. (Documentación viva, casos de prueba, reportes en un solo lugar).
 
-![[Pasted image 20241028144358.png]]
+![](./design/image13.png)
 
 ### Características Clave de Cucumber
 
@@ -82,31 +82,36 @@ gradle -v
 Deberías obtener una respuesta así: 
 
 
-![[Pasted image 20241028152237.png|400]]
+![](./design/image1.png)
 
-![[Pasted image 20241028152302.png|400]]
+![](./design/image2.png)
 
 4. Extensiones:
 - Abre Visual Studio Code e instala las siguientes extensiones:
 
+	![](./design/image3.png)
 
-	![[Pasted image 20241028152426.png|300]]
-	![[Pasted image 20241028152645.png|300]]
-	![[Pasted image 20241028152722.png|300]]
-	![[Pasted image 20241028152739.png|300]]
-	![[Pasted image 20241028154306.png|300]]
+	![](./design/image4.png)
+
+	![](./design/image5.png)
+
+	![](./design/image6.png)
+
+	![](./design/image7.png)
+
+	
 5. ChromeWebDriver
 
 ## Primer proyecto
 
 1. Abrir VSC y en la paleta de comandos escribir Java > Seleccionar la opción Gradle: Create a Gradle Java Project > Seleccionar  la carpeta de tu preferencia donde se creará el proyecto> Selecionar Groovy > Dar un nombre al proyecto > Enter. 
 
-![[Pasted image 20241028154812.png|200]]
+![](./design/image8.png)
 
-![[Pasted image 20241028154829.png|200]]
+![](./design/image9.png)
 
-Resultado:
-![[Pasted image 20241028155124.png|200]]
+![](./design/image10.png)
+
 
 
 2. Organiza tu proyecto:
@@ -201,9 +206,10 @@ gradle build
 gradle clean
 ```
 
-o desde la extensión para gradle: 
+o desde la extensión para gradle:
 
-![[Pasted image 20241028161603.png|300]]
+![](./design/image11.png)
+
 
 3.  Crea el archivo principal de tu proyecto en este caso CoffeTech.java en el carpeta pages con este código: 
 
@@ -253,5 +259,7 @@ public class CoffeeTech {
 
 Ejecuta la prueba dando clic en el botón verde al lado de test, verás como se abre una ventana de Chrome en nuestra página de prueba https://coffeetech.netlify.app. En la terminal podrás ver los resultados de la prueba mostrando un icono de check cuando la prueba es exitosa. 
 
-![[Pasted image 20241028164945.png]]
+![](./design/image12.png)
+
+
 
